@@ -110,7 +110,6 @@
    margin-top:100px;
    
    font-family: sans-serif;
-   /* background-image: url(images/);*/
    background-image:url("../background-signup.jpg");
    
 }
@@ -126,7 +125,6 @@
     background-color: white;
     padding:20px;
     margin-left: 80px;
-    /* margin:0 auto ; */
     margin-top:20px;
     margin-bottom: 20px;
     padding-bottom: 30px;
@@ -284,22 +282,30 @@ button{
       .signUp-mail{
           width:50%;
       }
-      .right-side{
-          width:100%;
-          text-align: center;
+      
+        .right-side{
+            width:100%;
+            text-align: center;
+        }
+        .right-side h1{
+          font-size: 30px;
+          padding-left: 15px;
+          padding-bottom:20px;
+          margin-right:15px;
+        }
+        /* ----------------------------
+            footer section media query 
+          ----------------------------------*/
+         .footer-section{
+            margin-top: 80px;
       }
-      .right-side h1{
-        font-size: 30px;
-        padding-left: 15px;
-        padding-bottom:20px;
-        margin-right:15px;
+        
+        .footer-thumbnail img{
+          width: 370px;
+          height: 80px;
+        }
+       
       }
-      /* ----------------------------
-          footer section media query 
-        ----------------------------------*/
-       .footer-section{
-          margin-top: 80px;
-    }
+      
 
-}
 
