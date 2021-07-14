@@ -1,0 +1,304 @@
+ /* font styles */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ /* utilities  */
+ 
+
+*{
+    margin:0;
+}
+.introducing-section{
+   background-color: rgba(0, 0, 255, 0.753);
+    
+}
+.top-logo{
+    display:flex;
+    justify-content: space-between;
+}
+.cup-logo img{
+    width:100px;
+    padding:30px;
+    margin-right:50px;
+}
+.welcome{
+    display: flex;
+}
+.series-title{
+   
+   width:485px;
+   height:258px;
+   margin:0 102px 200px 100px;
+   padding-top:80px;
+}
+.title{
+    font-family:'Poppins', sans-serif;
+    font-size:64px;
+    color:white;
+}
+.watch-live{
+    width:148px;
+    height:44px;
+    border-radius: 3px;
+    background-color: #E02C6D;
+}
+.watch_live_button{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-top:10px;
+}
+.watch_live_button a{
+    text-decoration: none;
+    /* font-size: 16px; */
+    color:white;
+}
+
+.series-thumbnail img{
+    width:556px;
+    height:438px;
+    margin:0 0 86px 20px;
+}
+
+.introducing-section:hover img{
+    transition:transform 2s ease;
+    transform:rotate(360deg);
+}
+
+/* players section */
+.players{
+    margin-top:50px;
+    margin-left:100px;
+    width:80%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    
+}
+.player-container{
+    width:330px;
+    height:456px;
+    box-shadow:-2px 2px 5px 1px lightgrey;
+    border-radius:3px;
+    
+}
+.player{
+    margin:15px;
+    
+}
+.player-detail{
+    width:300px;
+}
+.player-thumbnail img{
+    width:300px;
+    height:256px;
+}
+.player-name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+.player-description{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+}
+
+/* Buy Ticket section */
+
+.buy-ticket{
+   
+   margin-top:100px;
+   
+   font-family: sans-serif;
+   background-image: url(/background-signup.jpg);
+   
+}
+.full-side{
+    display: flex;
+    
+}
+.signUp-form{
+            
+    width:300px;
+    
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background-color: white;
+    padding:20px;
+    margin-left: 80px;
+    /* margin:0 auto ; */
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.signUp-form h1{
+    color:#1c8adb;
+}
+.input-box{
+    border-radius:20px; 
+    padding:10px;
+    margin:10px 0;
+    width:90%;
+    border:1px solid #999;
+    outline:none;
+}
+
+button{
+    color:white;
+    width:90%;
+    padding:10px;
+    border-radius: 20px;
+    font-size:15px;
+    margin:10px 0;
+    cursor: pointer;
+    
+}
+.signUp-btn{
+    background-color: #1c8adb;;
+}
+.signUp-mail{
+    background-color: #1c8adb;;
+}
+.buy-ticket a{
+    text-decoration: none;
+    color:blue;
+    font-weight: 700px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.buy-ticket p{
+    margin: 20px 0;
+}
+.right-side{
+    width:60%;
+    text-align: right;
+}
+.right-side h1{
+      color:white;
+      font-size: 60px;
+      text-align: center;
+      margin-top:60px ;
+      margin-left:30px;
+      padding-left:60px;
+}
+/*----------------------------------
+--------- footer section----------- */
+.footer-section{
+    margin-top:158px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer-item{
+    
+    width:484px;
+    height:213px;
+    
+}
+.footer-thumbnail img{
+    width:483px;
+    height:110px;
+}
+.footer-icon{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.fab {
+    margin-right:10px;
+}
+.copyright{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size:18px;
+}
+.fa-copyright{
+    font-size: 13px;
+}
+
+/* ------------------
+     media query 
+---------------------*/
+/* mobile devices */
+@media screen and (max-width:688px) {
+      .welcome{
+          display:block;
+          /* flex-wrap:wrap; */
+      }
+      .series-title{
+          width:90%;
+          margin:0;
+          padding:0;
+          
+      }
+      .title{
+          font-size:40px;
+          text-align: center;
+      }
+      .watch-live{
+          margin-left:35%;
+          margin-bottom:20px;
+          margin-top:20px;
+      }
+      .series-thumbnail{
+          width:90%;
+      }
+      .series-thumbnail img{
+         width:100%;
+         height:90%;
+      }
+
+      .players{
+          margin-left:35px;
+          grid-template-columns: repeat(1,1fr);
+          grid-gap: 27px 0;
+      }
+       /* -------------------------------
+                buy ticket section media query
+       ---------------------------------- */
+      .buy-ticket{
+          width:100%;
+      }
+      .full-side{
+          display:block;
+      }
+      .signUp-form{
+        width: 100%;
+        margin-top: 40px;
+        margin-left:0px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+        text-align: center;  
+      }
+      .input-box{
+          width:70%;
+          text-align: center;
+      }
+      .signUp-btn{
+          width:50%;
+      }
+      .signUp-mail{
+          width:50%;
+      }
+      .right-side{
+          width:100%;
+          text-align: center;
+      }
+      .right-side h1{
+        font-size: 30px;
+        padding-left: 15px;
+        padding-bottom:20px;
+        margin-right:15px;
+      }
+      /* ----------------------------
+          footer section media query 
+        ----------------------------------*/
+       .footer-section{
+          margin-top: 80px;
+    }
+
+}
+
