@@ -110,7 +110,8 @@
    margin-top:100px;
    
    font-family: sans-serif;
-   background-image: url(../background-signup.jpg);
+   /* background-image: url(images/);*/
+   background-image:url("../background-signup.jpg");
    
 }
 .full-side{
